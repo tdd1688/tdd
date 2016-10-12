@@ -18,12 +18,14 @@ class get_ddinfo():
             print k
 
         self.select_one_dd = choice(rt_json)
-        print self.select_one_dd
+        print "select_one_dd ==",self.select_one_dd
         return self.select_one_dd
 
-
+    def get_dd_info(self):
+        self.dd_info = self.select_one_dd
+        return self.dd_info
 
 
 if __name__ == "__main__":
-    get_ddinfo().get_dd_list()
+    get_ddinfo().get_one_from_ddlist()
 
