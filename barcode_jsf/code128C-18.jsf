@@ -1,0 +1,8 @@
+fw.getDocumentDOM().selectSimilarFromPoint({x:342, y:398}, 32, "hard edge", 0, "replace");
+fw.getDocumentDOM().deleteSelection(false);
+fw.getDocumentDOM().selectNone();
+fw.getDocumentDOM().exitPaintMode();
+fw.getDocumentDOM().setDocumentCanvasSize({left:0, top:0, right:536, bottom:250});
+fw.getDocumentDOM().setOpacity(80);
+fw.getDocumentDOM().applyEffects({ category:"UNUSED", effects:[ { EffectIsVisible:true, EffectMoaID:"{e4c0f4bc-c0a3-4cb3-b3513822027e4d9f}", MB_filter_preview_tile_size:"-1 -1", add_noise_amount:15, add_noise_use_color:false, category:"Noise", name:"Add Noise..." } ], name:"UNUSED" });
+fw.getDocumentDOM().applyEffects({ category:"UNUSED", effects:[ { EffectIsVisible:true, EffectMoaID:"{e4c0f4bc-c0a3-4cb3-b3513822027e4d9f}", MB_filter_preview_tile_size:"-1 -1", add_noise_amount:15, add_noise_use_color:false, category:"Noise", name:"Add Noise..." }, { EffectIsVisible:true, EffectMoaID:"{d04ef8c0-71b3-11d1-8c8200a024cdc039}", MB_filter_preview_tile_size:"-1 -1", category:"Blur", gaussian_blur_radius:0.5, name:"Gaussian Blur..." } ], name:"UNUSED" });

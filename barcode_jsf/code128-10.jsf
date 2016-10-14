@@ -1,0 +1,8 @@
+﻿fw.getDocumentDOM().selectSimilarFromPoint({x:39, y:168}, 32, "hard edge", 0, "replace");
+fw.getDocumentDOM().deleteSelection(false);
+fw.getDocumentDOM().selectNone();
+fw.getDocumentDOM().exitPaintMode();
+fw.getDocumentDOM().setDocumentCanvasSize({left:0, top:0, right:270, bottom:150});
+fw.getDocumentDOM().setOpacity(80);
+fw.getDocumentDOM().applyEffects({ category:"UNUSED", effects:[ { EffectIsVisible:true, EffectMoaID:"{e4c0f4bc-c0a3-4cb3-b3513822027e4d9f}", MB_filter_preview_tile_size:"-1 -1", add_noise_amount:15, add_noise_use_color:false, category:"\u6742\u70B9", name:"\u65B0\u589E\u6742\u70B9\u2026" } ], name:"UNUSED" });
+fw.getDocumentDOM().applyEffects({ category:"UNUSED", effects:[ { EffectIsVisible:true, EffectMoaID:"{e4c0f4bc-c0a3-4cb3-b3513822027e4d9f}", MB_filter_preview_tile_size:"-1 -1", add_noise_amount:15, add_noise_use_color:false, category:"\u6742\u70B9", name:"\u65B0\u589E\u6742\u70B9\u2026" }, { EffectIsVisible:true, EffectMoaID:"{d04ef8c0-71b3-11d1-8c8200a024cdc039}", MB_filter_preview_tile_size:"-1 -1", category:"\u6A21\u7CCA", gaussian_blur_radius:0.5, name:"\u9AD8\u65AF\u6A21\u7CCA..." } ], name:"UNUSED" });

@@ -63,7 +63,7 @@ class make_barcode():
             return False
 
         if not dhlength in self.barcode_define[kdcompany]:
-            print dhlength, "is not in", self.barcode_define[kdcompany]
+            print kdcompany,dhlength, "is not in", self.barcode_define[kdcompany]
             return False
 
         try:
@@ -77,8 +77,12 @@ class make_barcode():
         print cmd
         os.system(cmd)
 
+        barcode_jsf = "code"+self.execode[str(kdcompany) + "-" + str(dhlength)]+"-"+ str(dhlength)+".jsf"
         barcode_png = "barcode\\" + str(kdnumber)+".png"
-        return barcode_png
+
+        print barcode_jsf
+        print barcode_png
+        return barcode_png,barcode_jsf
 
 
 if __name__ == "__main__":
