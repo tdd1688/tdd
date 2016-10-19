@@ -7,7 +7,7 @@ class make_barcode():
     def __init__(self):
         self.barcode_define = {
             "圆通": [10, 12, 18],
-            "申通": [12, 13],
+            "优速": [12],
             "申通": [12, 13],
             "申通": [12, 13],
             "申通": [12, 13],
@@ -77,7 +77,7 @@ class make_barcode():
         print cmd
         os.system(cmd)
 
-        barcode_jsf = "code"+self.execode[str(kdcompany) + "-" + str(dhlength)]+"-"+ str(dhlength)+".jsf"
+        barcode_jsf = "barcode_jsf\\code"+self.execode[str(kdcompany) + "-" + str(dhlength)]+"-"+ str(dhlength)+".jsf"
         barcode_png = "barcode\\" + str(kdnumber)+".png"
 
         print barcode_jsf
@@ -86,4 +86,4 @@ class make_barcode():
 
 
 if __name__ == "__main__":
-    make_barcode().create_bar_code("圆通", "808003953626", 12)
+    make_barcode().create_bar_code("优速", "518132270206", 12)
